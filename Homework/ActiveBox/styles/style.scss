@@ -64,9 +64,12 @@ button:active{
 }
 
 .header{
-    position: absolute;
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
     z-index: 3;
+    background-color: transparent;
 
     & .container{
         width: 100%;
