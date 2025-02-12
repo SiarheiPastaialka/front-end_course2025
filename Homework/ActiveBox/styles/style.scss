@@ -20,6 +20,7 @@ body{
         max-width: 1170px;
         margin: 0 auto;
         text-align: center;
+        padding: 0 20px;
     }
 }
 
@@ -68,8 +69,7 @@ button:active{
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 3;
-    background-color: transparent;
+    z-index: 2;
 
     & .container{
         width: 100%;
@@ -77,7 +77,7 @@ button:active{
         justify-content: space-between;
         align-items: center;
         padding: 36px 0;
-        
+        z-index: 2;
     
         &::after{
             display: block;
@@ -98,7 +98,7 @@ button:active{
     .menu{
         &__items{
             display: flex;
-            gap: 5px;
+
             list-style: none;
             text-transform: uppercase;
             justify-content: space-between;
@@ -108,7 +108,9 @@ button:active{
             }  
         }    
         &__item{
-            min-width: 130px;
+            /*max-height: 100%*/
+
+            min-width: 134px;
             display: flex;
             justify-content: center;
 
@@ -121,6 +123,29 @@ button:active{
             line-height: 15px;
             font-weight: 700;
             color: #ffffff;
+            text-transform: uppercase;
+            text-decoration: none;
+
+            &:hover::after{
+                display: block;
+                content: '';
+                width: 134px;
+                border-bottom: 3px solid #BABBC5;
+                position: relative;
+                bottom: -40px;
+            }
+
+            &:active{
+                color: #E71414;
+            }
+
+            &:active::after{
+                display: block;
+                content: '';
+                width: 134px;
+                border-bottom: 3px solid #E71414;
+                bottom: -40px;
+            }
 
         @media only screen and (min-device-width: 768px) and (max-device-width: 1024px){   
                 font-size: 12px;
@@ -135,10 +160,9 @@ button:active{
     background-position: center;
     background-size: cover;
     position: relative;
-    background-blend-mode: normal;
     padding: 230px 0 120px;
     margin-bottom: 116px;
-    z-index: 2;
+    z-index: 1;
     /*
     @media only screen and (min-device-width: 768px) and (max-device-width: 1024px){   
             padding: 257px 0 126px;
@@ -151,7 +175,6 @@ button:active{
             height: 100%;
             content: '';
             background-color: rgba(37, 43, 73, 0.8);
-            background-blend-mode: normal;
             left: 0;
             top: 0;
             bottom: 0;
@@ -192,24 +215,22 @@ button:active{
     margin-bottom: 116px;
 
         & .container{
-            display: flex;
-            flex-wrap: wrap;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
             column-gap: 30px;
-            row-gap: 87.57px;
-            justify-content: center;
+            row-gap: 89px;
 
-        @media only screen and (min-device-width: 768px) and (max-device-width: 1024px){   
+        @media only screen and (min-device-width: 768px) and (max-device-width: 1024px){
+            /*   
                 column-gap: 20px;
                 row-gap: 49px;
+            */
             }
         }
 
         &__item{
             width: 100%;
             max-width: 370px;
-            display: flex;
-            flex-flow: column;
-            align-items: center;
         
         @media only screen and (min-device-width: 768px) and (max-device-width: 1024px){   
                 max-width: 314px;
@@ -221,7 +242,7 @@ button:active{
                 height: 100px;
                 align-items: center;
                 justify-content: center;
-                margin-bottom: 29px;
+                margin: 0 auto 29px;
 
             @media only screen and (min-device-width: 768px) and (max-device-width: 1024px){   
                     width: 85px;
