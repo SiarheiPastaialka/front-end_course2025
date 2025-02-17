@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Active Box</title>
     <link rel="icon" type="image/svg" href="images/favicon.svg">
+    <link rel="stylesheet" href="styles/fonts.css">
     <link rel="stylesheet" href="styles/style.css">
     <script src="scripts/header.js"></script>
+    <script src="scripts/menu-mobile.js"></script>
     <!--a<script src="scripts/slider.js"></script>
     alt для картинок и еще для чего?-->
 </head>
@@ -14,8 +16,14 @@
     <header class="header">
         <div class="container">
             <a class="header__logo" href="#top">
-                <img src="images/logo.svg">
+                <picture>
+                    <source media="(max-width: 1023px)" srcset="images/logo-mobile.svg">
+                    <img src="images/logo.svg" alt="Logo">
+                </picture>
             </a>
+            <button class="hamburger" aria-label="Toggle Menu">
+                <img src="images/hamburger.svg" alt="Menu">
+            </button>
             <nav class="menu">
                 <ul class="menu__items">
                     <li class="menu__item"><a class="menu__link" href="#features">features</a></li>
@@ -211,9 +219,10 @@
                     <p class="team__item__text">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
                     <div class="socialmedia-wrapper">
                         <a class="socialmedia__link" href="https://www.facebook.com/">
-                            <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M6.39703 17.9972V9.80117H9.16203L9.57303 6.59217H6.39703V4.54817C6.39703 3.62217 6.65503 2.98817 7.98403 2.98817H9.66803V0.127169C8.84867 0.0393602 8.02508 -0.00303802 7.20103 0.000169166C4.75703 0.000169166 3.07903 1.49217 3.07903 4.23117V6.58617H0.332031V9.79517H3.08503V17.9972H6.39703Z" fill="#C6CBCD"/>
-                            </svg>                                
+                            <picture>
+                                <source media="(max-width: 1023px)" srcset="images/social-media/facebook-tablet.svg">
+                                <img src="images/social-media/facebook.svg" alt="Facebook">
+                            </picture>                            
                         </a>
                         <a class="socialmedia__link" href="https://www.x.com/">
                             <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -314,16 +323,17 @@
                         </div>
                         <div class="slider__slide__content-wrapper">
                             <h3 class="slider__slide__content__title">“Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Aenean eu leo quam...”</h3>
-                            <p class="slider__slide__content__text"></p>
+                            <p class="slider__slide__content__text">Susan Sims, Interaction Designer at XYZ</p>
                         </div>
                     </div>
                 <!--</div>-->
-                <div class="slider__dots">
-                    <a href="#" class="slider__indicator"></a>
-                    <a href="#" class="slider__dot" data-pos="0"></a>
-                    <a href="#" class="slider__dot" data-pos="1"></a>
-                    <a href="#" class="slider__dot" data-pos="2"></a>
-                    <a href="#" class="slider__dot" data-pos="3"></a>
+                    <div class="slider__indicators-wrapper">
+                        <a class="slider__indicator"></a>
+                        <a class="slider__indicator"></a>
+                        <a class="slider__indicator"></a>
+                        <a class="slider__indicator"></a>
+                        <a class="slider__indicator"></a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -369,8 +379,7 @@
     </main>
     <footer class="footer">
         <div class="container">
-            <p class="footer__text">Copyright © 2015 ActiveBox. All Rights</p>
-            <p class="footer__text">ReservedMade with <span>By Kamal Chaneman</span></p>
+            <p class="footer__text">Copyright © 2015 ActiveBox. All Rights ReservedMade with <span>By Kamal Chaneman</span></p>
         </div>
     </footer>
 </body>
