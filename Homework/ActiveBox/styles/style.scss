@@ -506,6 +506,13 @@ button {
                     padding: 0 9.845px;
                     margin-bottom: 12.81px;
                 }
+
+                @media only screen and (min-device-width: 320px) and (max-device-width: 1023px) {
+                    font-size: 18px; 
+                    line-height: 21px;
+                    padding: 0;
+                    margin-bottom: 4.63px;
+                }
             }
 
             &__text {
@@ -518,6 +525,12 @@ button {
                 @media only screen and (min-device-width: 1024px) and (max-device-width: 1169px) {
                     font-size: 14px; 
                     line-height: 16px;
+                }
+
+                @media only screen and (min-device-width: 320px) and (max-device-width: 1023px) {
+                    font-size: 14px; 
+                    line-height: 16px;
+                    padding: 0;
                 }
             }
         }
@@ -823,10 +836,12 @@ button {
         column-gap: 25px;
 
         @media only screen and (min-device-width: 1024px) and (max-device-width: 1169px) {
+            max-width: 149.49px;
             column-gap: 25.51px;
         }
 
         @media only screen and (min-device-width: 320px) and (max-device-width: 1023px) {
+            max-width: 129.49px;
             column-gap: 20.51px;
         }
     }
