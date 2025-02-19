@@ -40,15 +40,17 @@ button {
     color: #ffffff;
     background-color: #FF4343;
     border: none;
-    padding: 26px 10px;
+    padding: 24.79px 10px;
     cursor: pointer;
 
     &:hover {
         background-color: #E71414;
+        transition: opacity 0.1s ease-in-out;
     }
         
     &:active {
         box-shadow: 4px 4px 30px #FF4343;
+        transition: opacity 0.1s ease-in-out;
     }
 
     @media only screen and (min-device-width: 1024px) and (max-device-width: 1169px) {
@@ -74,11 +76,11 @@ button {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 36px 0;
+        padding: 36px 0 35.89px;
         z-index: 2;
 
         @media only screen and (min-device-width: 320px) and (max-device-width: 1023px) {
-            padding: 19px 0;
+            padding: 38px 36.5px;
         } 
         
         &::after {
@@ -167,7 +169,7 @@ button {
             justify-content: space-between;
 
             @media only screen and (min-device-width: 1024px) and (max-device-width: 1169px){   
-                gap: 1.5px;
+                gap: 1px;
             }  
 
             @media only screen and (min-device-width: 320px) and (max-device-width: 1023px) {
@@ -204,6 +206,11 @@ button {
             text-decoration: none;
             position: relative;
 
+            @media only screen and (min-device-width: 1024px) and (max-device-width: 1169px) {  
+                font-size: 12px;
+                line-height: 14px;
+            }
+
             &:hover::after {
                 display: block;
                 content: '';
@@ -213,6 +220,7 @@ button {
                 bottom: -42px;
                 left: 50%;
                 transform: translateX(-50%);
+                transition: opacity 0.1s ease-in-out;
 
                 @media only screen and (min-device-width: 1024px) and (max-device-width: 1169px) {  
                     line-height: 112px;
@@ -221,6 +229,7 @@ button {
 
             &:active {
                 color: #E71414;
+                transition: opacity 0.1s ease-in-out;
             }
 
             &:active::after {
@@ -296,7 +305,8 @@ button {
         font-weight: $fw-regular;
         line-height: 28px;
         color: #ffffff;
-        margin-bottom: 79.57px;
+        margin-bottom: 82px;
+        padding: 0 85px;
 
         @media only screen and (min-device-width: 1024px) and (max-device-width: 1169px) {
             font-size: 18px;
@@ -313,7 +323,7 @@ button {
 }
 
 .features {
-    margin-bottom: 116px;
+    margin-bottom: 133.57px;
 
         @media only screen and (min-device-width: 1024px) and (max-device-width: 1169px) {   
             margin-bottom: 80.11px;
@@ -475,7 +485,7 @@ button {
             object-fit: cover;
             width: 100%;
             height: 100%;
-            aspect-ratio: 1.11/1;
+            aspect-ratio: 1.115/1;
         }
 
         &__overlay {
@@ -490,7 +500,17 @@ button {
             justify-content: center;
             opacity: 0;
             transition: opacity 0.1s ease-in-out;
-          
+            row-gap: 20.57px;
+            padding-bottom: 19.215px;
+
+            @media only screen and (min-device-width: 1024px) and (max-device-width: 1169px) {
+                row-gap: 12.81px;
+            }
+
+            @media only screen and (min-device-width: 320px) and (max-device-width: 1023px) {
+                row-gap: 4.63px;
+            }
+                
             &__title {
                 color: #FFFFFF;
                 font-size: 24px;
@@ -498,20 +518,18 @@ button {
                 line-height: 28px;
                 text-align: center;
                 text-transform: uppercase;
-                margin-bottom: 20.57px;
+                padding: 16px 0;
 
                 @media only screen and (min-device-width: 1024px) and (max-device-width: 1169px) {
                     font-size: 18px; 
                     line-height: 21px;
                     padding: 0 9.845px;
-                    margin-bottom: 12.81px;
                 }
 
                 @media only screen and (min-device-width: 320px) and (max-device-width: 1023px) {
                     font-size: 18px; 
                     line-height: 21px;
                     padding: 0;
-                    margin-bottom: 4.63px;
                 }
             }
 
@@ -544,6 +562,10 @@ button {
     width: 39px;
     height: 39px;
     border: 1px solid #C6CBCD;
+
+    & img{
+        display: flex;
+    }
 
 }
 
@@ -613,6 +635,7 @@ button {
             line-height: 28px;
             color: #2D3033;
             margin-bottom: 6.29px;
+            text-transform: capitalize;
 
             @media only screen and (min-device-width: 1024px) and (max-device-width: 1169px){
                 font-size: 18px;
@@ -891,7 +914,8 @@ button {
         font-size: 30px;
         font-weight: $fw-medium;
         line-height: 35px;
-        margin-bottom: 22.79px;
+        padding: 17.5px 0;
+        margin-bottom: 5.29px;
 
             
         @media only screen and (min-device-width: 1024px) and (max-device-width: 1169px) {
@@ -932,20 +956,19 @@ button {
 .outro {
     padding: 71.14px 0 67.14px; 
     background-color: #353C65;
+    color: #FFFFFF;
     font-size: 18px;
     line-height: 21px;
-    color: #FFFFFF;
 
     @media only screen and (min-device-width: 1024px) and (max-device-width: 1169px) {
         padding: 46.59px 0 43.13px;
-        line-height: 14px;
+        font-size: 14px;
         line-height: 16px;
     }
 
     @media only screen and (min-device-width: 320px) and (max-device-width: 1023px) {
         padding: 34.14px 0 33.14px;
         font-size: 14px;
-        line-height: 14px;
         line-height: 16px;
     }
 
@@ -964,7 +987,9 @@ button {
 
     &__wrapper-content {
         width: 100%;
+        max-width: 370px;
         text-align: center;
+
 
         @media only screen and (min-device-width: 320px) and (max-device-width: 1023px) {
             margin-bottom: 69.24px;
@@ -1010,7 +1035,7 @@ button {
 
         &:nth-of-type(3) {
             @media only screen and (min-device-width: 320px) and (max-device-width: 1023px) {
-                margin-bottom: 0px;
+                margin-bottom: none;
             }
         }
 
@@ -1026,14 +1051,20 @@ button {
             }
         }
 
+        &:nth-of-type(3) .outro__text { 
+            text-transform: capitalize;
+        }
     }
 
-    &__title{
-        font-weight: 700;
+    &__title {
+        font-weight: $fw-bold;
+        font-size: 18px;
+        text-transform: uppercase;
     }
     
-    &__text{
-        font-weight: 400;
+    &__text {
+        font-size: 18px;
+        font-weight: $fw-regular;
     }
 
     & .socialmedia-wrapper{
