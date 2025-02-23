@@ -7,6 +7,7 @@
     <link rel="icon" type="image/svg" href="images/favicon.svg">
     <link rel="stylesheet" href="styles/fonts.css">
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <script src="scripts/header.js"></script>
     <script src="scripts/menu-mobile.js"></script>
     <!--a<script src="scripts/slider.js"></script>
@@ -120,9 +121,7 @@
             <div class="works__wrapper">
                 <div class="works__item">
                     <a class="works__item__link" href="https://www.example.com">
-                        <div class="works__item__image">
-                            <img class="works__item__image" src="images/work_1.png">
-                        </div>
+                        <img class="works__item__image" src="images/work_1.png">
                         <div class="works__item__overlay">
                             <h3 class="works__item__overlay__title">Project Name</h3>
                             <p class="works__item__overlay__text">User Interface Design</p>
@@ -131,9 +130,7 @@
                 </div>
                 <div class="works__item">
                     <a class="works__item__link" href="https://www.example.com">
-                        <div class="works__item__image">
-                            <img class="works__item__image" src="images/work_2.png">
-                        </div>
+                        <img class="works__item__image" src="images/work_2.png">
                         <div class="works__item__overlay">
                             <h3 class="works__item__overlay__title">Project Name</h3>
                             <p class="works__item__overlay__text">User Interface Design</p>
@@ -142,9 +139,7 @@
                 </div>
                 <div class="works__item">
                     <a class="works__item__link" href="https://www.example.com">
-                        <div class="works__item__image">
-                            <img class="works__item__image" src="images/work_3.png">
-                        </div>
+                        <img class="works__item__image" src="images/work_3.png">
                         <div class="works__item__overlay">
                             <h3 class="works__item__overlay__title">Project Name</h3>
                             <p class="works__item__overlay__text">User Interface Design</p>
@@ -153,9 +148,7 @@
                 </div>
                 <div class="works__item">
                     <a class="works__item__link" href="https://www.example.com">
-                        <div class="works__item__image">
-                            <img class="works__item__image" src="images/work_4.png">
-                        </div>
+                        <img class="works__item__image" src="images/work_4.png">
                         <div class="works__item__overlay">
                             <h3 class="works__item__overlay__title">Project Name</h3>
                             <p class="works__item__overlay__text">User Interface Design</p>
@@ -164,9 +157,7 @@
                 </div>
                 <div class="works__item">
                     <a class="works__item__link" href="https://www.example.com">
-                        <div class="works__item__image">
-                            <img class="works__item__image" src="images/work_5.png">
-                        </div>
+                        <img class="works__item__image" src="images/work_5.png">
                         <div class="works__item__overlay">
                             <h3 class="works__item__overlay__title">Project Name</h3>
                             <p class="works__item__overlay__text">User Interface Design</p>
@@ -175,9 +166,7 @@
                 </div>
                 <div class="works__item">
                     <a class="works__item__link" href="https://www.example.com">
-                        <div class="works__item__image">
-                            <img class="works__item__image" src="images/work_6.png">
-                        </div>
+                        <img class="works__item__image" src="images/work_6.png">
                         <div class="works__item__overlay">
                             <h3 class="works__item__overlay__title">Project Name</h3>
                             <p class="works__item__overlay__text">User Interface Design</p>
@@ -186,9 +175,7 @@
                 </div>            
                 <div class="works__item">
                     <a class="works__item__link" href="https://www.example.com">
-                        <div class="works__item__image">
-                            <img class="works__item__image" src="images/work_7.png">
-                        </div>
+                        <img class="works__item__image" src="images/work_7.png">
                         <div class="works__item__overlay">
                             <h3 class="works__item__overlay__title">Project Name</h3>
                             <p class="works__item__overlay__text">User Interface Design</p>
@@ -197,9 +184,7 @@
                 </div>
                 <div class="works__item">
                     <a class="works__item__link" href="https://www.example.com">
-                        <div class="works__item__image">
-                            <img class="works__item__image" src="images/work_8.png">
-                        </div>
+                        <img class="works__item__image" src="images/work_8.png">
                         <div class="works__item__overlay">
                             <h3 class="works__item__overlay__title">Project Name</h3>
                             <p class="works__item__overlay__text">User Interface Design</p>
@@ -314,27 +299,66 @@
             </div>
         </div>
         <div id="testimonials" class="testimonials">
-            <div class="slider">
-                <!--
-                <div class="slider__slides">-->
-                    <div class="slider__slide">
-                        <div class="slider__slide__photo-wrapper">
-                            <img class="slider__slide__photo" src="images/testimonial_1.png">
+            <div class="swiper mySwiper">
+                <div class="slider swiper-wrapper">
+                    <!--
+                    <div class="slider__slides">-->
+                        <div class="slider__slide swiper-slide">
+                            <div class="slider__slide__photo-wrapper">
+                                <img class="slider__slide__photo" src="images/testimonial_1.png">
+                            </div>
+                            <div class="slider__slide__content-wrapper">
+                                <h3 class="slider__slide__content__title">“Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Aenean eu leo quam...”</h3>
+                                <p class="slider__slide__content__text">Susan Sims, Interaction Designer at XYZ</p>
+                            </div>
                         </div>
-                        <div class="slider__slide__content-wrapper">
-                            <h3 class="slider__slide__content__title">“Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Aenean eu leo quam...”</h3>
-                            <p class="slider__slide__content__text">Susan Sims, Interaction Designer at XYZ</p>
+                        <div class="slider__slide swiper-slide">
+                            <div class="slider__slide__photo-wrapper">
+                                <img class="slider__slide__photo" src="images/testimonial_1.png">
+                            </div>
+                            <div class="slider__slide__content-wrapper">
+                                <h3 class="slider__slide__content__title">“Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Aenean eu leo quam...”</h3>
+                                <p class="slider__slide__content__text">Susan Sims, Interaction Designer at XYZ</p>
+                            </div>
                         </div>
-                    </div>
-                <!--</div>-->
-                    <div class="slider__indicators-wrapper">
-                        <a class="slider__indicator"></a>
-                        <a class="slider__indicator"></a>
-                        <a class="slider__indicator"></a>
-                        <a class="slider__indicator"></a>
-                        <a class="slider__indicator"></a>
-                    </div>
+                        <div class="slider__slide swiper-slide">
+                            <div class="slider__slide__photo-wrapper">
+                                <img class="slider__slide__photo" src="images/testimonial_1.png">
+                            </div>
+                            <div class="slider__slide__content-wrapper">
+                                <h3 class="slider__slide__content__title">“Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Aenean eu leo quam...”</h3>
+                                <p class="slider__slide__content__text">Susan Sims, Interaction Designer at XYZ</p>
+                            </div>
+                        </div>
+                        <div class="slider__slide swiper-slide">
+                            <div class="slider__slide__photo-wrapper">
+                                <img class="slider__slide__photo" src="images/testimonial_1.png">
+                            </div>
+                            <div class="slider__slide__content-wrapper">
+                                <h3 class="slider__slide__content__title">“Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Aenean eu leo quam...”</h3>
+                                <p class="slider__slide__content__text">Susan Sims, Interaction Designer at XYZ</p>
+                            </div>
+                        </div>
+                        <div class="slider__slide swiper-slide">
+                            <div class="slider__slide__photo-wrapper">
+                                <img class="slider__slide__photo" src="images/testimonial_1.png">
+                            </div>
+                            <div class="slider__slide__content-wrapper">
+                                <h3 class="slider__slide__content__title">“Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Aenean eu leo quam...”</h3>
+                                <p class="slider__slide__content__text">Susan Sims, Interaction Designer at XYZ</p>
+                            </div>
+                        </div>
+                         <!--</div>-->
+                         <!--
+                            <a class="slider__indicator"></a>
+                            <a class="slider__indicator"></a>
+                            <a class="slider__indicator"></a>
+                            <a class="slider__indicator"></a>
+                            <a class="slider__indicator"></a>
+                        </div>
+                        -->
                 </div>
+                <div class="slider__indicators-wrapper swiper-pagination"></div>
             </div>
         </div>
         <section id="downloads" class="downloads">
@@ -344,6 +368,8 @@
                 <button>download here</button>
             </div>
         </section>
+    </main>
+    <footer class="footer">
         <div class="outro">
             <div class="container">
                 <div class="outro__wrapper-content">
@@ -376,11 +402,23 @@
                 </div>
             </div>
         </div>
-    </main>
-    <footer class="footer">
-        <div class="container">
-            <p class="footer__text">Copyright © 2015 ActiveBox. All Rights ReservedMade with <span>By Kamal Chaneman</span></p>
+        <div class="footer__credits">
+            <div class="footer__credits__text-wrapper">
+                <p class="footer__credits__text">Copyright © 2015 ActiveBox. All Rights ReservedMade with <span>By Kamal Chaneman</span></p>
+            </div>
         </div>
     </footer>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
 </body>
 </html>
