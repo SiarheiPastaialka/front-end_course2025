@@ -320,6 +320,7 @@ button:active {
 
 .features {
   margin-bottom: 133.57px;
+  scroll-margin-top: 200px;
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .features {
@@ -414,6 +415,7 @@ button:active {
 }
 .works {
   margin-bottom: 114px;
+  scroll-margin-top: 150px;
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .works {
@@ -550,6 +552,7 @@ button:active {
 
 .team {
   margin-bottom: 114px;
+  scroll-margin-top: 150px;
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .team {
@@ -758,6 +761,7 @@ button:active {
 }
 
 .testimonials {
+  scroll-margin-top: 150px;
   margin: 0 auto 114px;
 }
 @media only screen and (min-width: 768px) and (max-width: 768px) {
