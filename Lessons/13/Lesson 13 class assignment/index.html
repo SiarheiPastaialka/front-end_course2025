@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <section class="blog">
+            <div class="container">
+                <h2 class="blog__title">Contents Strategies</h2>
+                <p class="blog__text">We focus on ergonomics and meeting you where you work. It's only a keystroke away.</p>
+                <div class="swiper mySwiper">
+                    <div class="blog__posts-wrapper swiper-wrapper">
+                        <div class="post swiper-slide">
+                            <div class="post__image-wrapper">
+                                <img class="post__image" src="images/1.png">
+                            </div>
+                            <div class="post__text-wrapper">
+                                <p class="post__text">By <span class="post__author">Wahid Ari</span> |  03 March 2019</p>
+                                <h3 class="post__title">Increasing Prosperity With Positive Thinking</h3>
+                            </div>
+                        </div>
+                        <div class="post swiper-slide">
+                            <div class="post__image-wrapper">
+                                <img class="post__image" src="images/2.png"> 
+                            </div>
+                            <div class="post__text-wrapper">
+                                <p class="post__text">By <span class="post__author">Wahid Ari</span> |  03 March 2019</p>
+                                <h3 class="post__title">Motivation Is The First Step To Success</h3>
+                            </div>
+                        </div>
+                        <div class="post swiper-slide">
+                            <div class="post__image-wrapper">
+                                <img class="post__image" src="images/3.png">
+                            </div>
+                            <div class="post__text-wrapper">
+                                <p class="post__text">By <span class="post__author">Wahid Ari</span> |  03 March 2019</p>
+                                <h3 class="post__title">Success Steps For Your Personal Or Business</h3>
+                            </div>
+                        </div>
+                        <div class="post swiper-slide">
+                            <div class="post__image-wrapper">
+                                <img class="post__image" src="images/3.png">
+                            </div>
+                            <div class="post__text-wrapper">
+                                <p class="post__text">By <span class="post__author">Wahid Ari</span> |  03 March 2019</p>
+                                <h3 class="post__title">Success Steps For Your Personal Or Business</h3>
+                            </div>
+                        </div>
+                        <div class="post swiper-slide">
+                            <div class="post__image-wrapper">
+                                <img class="post__image" src="images/2.png"> 
+                            </div>
+                            <div class="post__text-wrapper">
+                                <p class="post__text">By <span class="post__author">Wahid Ari</span> |  03 March 2019</p>
+                                <h3 class="post__title">Motivation Is The First Step To Success</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          slidesPerView: 3,
+          spaceBetween: 32,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+        });
+      </script>
+</body>
+</html>
