@@ -1,1 +1,0 @@
-Temporary file while the folder is empty.
